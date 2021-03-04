@@ -1,3 +1,5 @@
+<!--This is part of the assignment 3 example-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

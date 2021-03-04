@@ -1,0 +1,69 @@
+/*Set the background image for the site*/
+body{
+    background-image: url("Images/DartPattern.png");
+    background-size: 100%;
+}
+
+/*Create the admin login button*/
+p#admin{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    opacity: 0;
+    width: auto;
+    font-size: 3em;
+    transition: opacity 2s;
+    display: inline-block;
+    background-color: whitesmoke;
+}
+p#admin:hover{
+    opacity: 100;
+}
+
+/*Give each element a light gray background so it is readable overtop the patterned background*/
+h1, div.container, foot p{
+    background-color: whitesmoke;
+}
+
+/*HEADERS*/
+h1{
+    text-align: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 5px;
+    border-style: dashed;
+}
+
+/*Restrict width of content section as to not get too wide and also center it*/
+div.container{
+    padding-left: 1%;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    height: auto;
+    overflow: auto;
+}
+
+/*TABLE STYLING*/
+table{
+    width: 100%;
+}
+th, td{
+    font-size: 1em;
+}
+td{  
+    text-align: center;
+}
+td.tableName{
+    width: 25%;
+}
+
+/*Style the links and force them to the bottom right of the screen*/
+foot p {
+    border: 1px solid blueviolet;
+    display: inline-block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}

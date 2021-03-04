@@ -1,0 +1,84 @@
+<!--THIS IS TO BE AN EXAMPLE OF ASSIGNMENT 1-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFC Home</title>
+    <link rel="stylesheet" type="text/css" href="BandSiteStyle.css">
+    <script src="BandSiteScript.js"></script>
+</head>
+<body>
+    <!--Admin login-->
+    <p id="admin" onclick="bandLogin()">TFC</p>
+
+
+
+    <!--TITLE ELEMENT-->
+    <h1>Mr. F</h1>
+    <img id="CowboyChris" src="https://chrishfeatherston.files.wordpress.com/2021/02/1250600.jpg?w=644&h=484"/>
+    <br/><br/>
+
+    <!--CONTAINER FOR MORE ELEMENTS-->
+    <div class="container">
+        <!--Upper section of the website content-->
+        <div class="top">
+        <h5>About Mr. F</h5>
+        <!--LEFT-->
+            <div class="left">
+                <a target="_blank" href="https://cfeatherston.ca/">
+                    <img id="atom" src="https://chrishfeatherston.files.wordpress.com/2018/02/atom2.png"/>
+                </a>
+            </div>
+            <!--RIGHT-->
+            <div class="right">
+                <p>Clicking the image to the left will take you to my other site! There you can learn about things like:</p>
+                <ul>
+                    <li>Me</li>
+                    <li>The things I like</li>
+                    <li>The things I do</li>
+                    </ul>
+            </div>
+        </div>
+        <!--Lower section of the website content-->
+        <div class="bot">
+        <h5>More <mark>FUN</mark> stuff!</h5>
+            <!--LEFT-->
+            <div class="left"><p>On the right is an image that failed to load &#8594;</p><br/><br/><br/><br/><br/>
+            <p>A fun video from The Flannel Contract &#8594;</p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <p>And way to contact the band &#8594;</p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            </div>
+            <!--RIGHT-->
+            <div class="right">
+                <img src="Images/AnImageThatDoesNotExist.png" alt="Opps. A picture could not be found."><br/><br/>
+                <iframe width="280" height="157.5" src="https://www.youtube.com/embed/7-g-Nq44BkE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/><br/>
+                <form action="BandSiteSendMessages.php" method="GET">
+                    <fieldset><legend>Info</legend>
+                    First Name: <input type="text" name="firstname"/><br/>
+                    Last Name: <input type="text" name="lastname"/><br/>
+                    Email: <input type="email" name="email"/><br/>
+                    Mobile (optional): <input type="tel" name="tel" value="555-0123"/><br>
+                    Message: <br/> <textarea name="message" rows="4" cols="32">Your text goes here</textarea> <br/>
+            
+                    <input type="submit"/>
+                    <input type="reset"/>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+    </div>
+</body>
+<foot>
+    <p>
+        <a href="BandSiteHome.html">Home</a><span> | </span>
+        <a href="BandSiteCalculator.html">Calculator</a><span> | </span>
+        <a href="BandSiteQuiz.html">Music Quiz</a><span> | </span>
+        <a href="BandSiteStore.html">Merch Store</a>
+    </p>
+</foot>
+</html>

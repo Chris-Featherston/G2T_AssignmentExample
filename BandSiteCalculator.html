@@ -1,0 +1,57 @@
+<!--THIS IS TO BE AN EXAMPLE OF ASSIGNMENT 2-->
+<!--This calculator has been left incomplete and is meant to provide the students with a starting point-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFC Calculator</title>
+    <link rel="stylesheet" type="text/css" href="BandSiteStyle.css">
+    <script src=BandSiteScript.js></script>
+</head>
+<body>
+    <!--TABLE THAT WILL BE THE BASIS OF A CALCULATOR-->
+        <div class="container" id="calc"><table>
+        <tbody>
+          <tr>
+            <th id="display" colspan="4">0</th>
+          </tr>
+          <tr>
+            <!--Buttons with event handlers to respond to user action and change the style as well as call our JavaScript Functions-->
+            <td class="num" onmousedown='style.border = "inset"' onmouseup='style.border = "outset"' onclick="updateDisplay(7)">7</td>
+            <td class="num" onmousedown='style.border = "inset"' onmouseup='style.border = "outset"' onclick="updateDisplay(8)">8</td>
+            <td class="num" onmousedown='style.border = "inset"' onmouseup='style.border = "outset"' onclick="updateDisplay(9)">9</td>
+            <td class="opp" onmousedown='style.border = "inset"' onmouseup='style.border = "outset"' onclick="updateDisplay('/')">/</td>
+          </tr>
+          <tr>
+            <td class="num">4</td>
+            <td class="num">5</td>
+            <td class="num">6</td>
+            <td class="opp">*</td>
+          </tr>
+          <tr>
+            <td class="num">1</td>
+            <td class="num">2</td>
+            <td class="num">3</td>
+            <td class="opp">-</td>
+          </tr>
+          <tr>
+            <td class="num" onmousedown='style.border = "inset"' onmouseup='style.border = "outset"' onclick="updateDisplay(0)">0</td>
+            <td class="opp" onmousedown='style.border = "inset"' onmouseup='style.border = "outset"' onclick="clearDisplay()">c</td>
+            <td class="opp" onmousedown='style.border = "inset"' onmouseup='style.border = "outset"' onclick="calculateDisplay()">=</td>
+            <td class="opp" onmousedown='style.border = "inset"' onmouseup='style.border = "outset"' onclick="updateDisplay('+')">+</td>
+          </tr>
+        </tbody>
+        </table></div>
+</body>
+<foot>
+    <p>
+      <a href="BandSiteHome.html">Home</a><span> | </span>
+      <a href="BandSiteCalculator.html">Calculator</a><span> | </span>
+      <a href="BandSiteQuiz.html">Music Quiz</a><span> | </span>
+      <a href="BandSiteStore.html">Merch Store</a>
+   </p>
+</foot>
+</html>

@@ -1,0 +1,84 @@
+<!--THIS IS TO BE AN EXAMPLE OF ASSIGNMENT 2-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFC Merch Store</title>
+    <link rel="stylesheet" type="text/css" href="BandSiteStyle.css">
+    <script src="BandSiteScript.js"></script>
+</head>
+<body>
+    <!--TABLE THAT WILL BE THE BASIS OF A CALCULATOR-->
+        <div class="container" id="merch"><br/>
+            <!--CART-->
+            <h2>Guitarists: </h2><h3 id="NumF">1</h3><br/>
+            <h2>Bassists: </h2><h3 id="NumK">1</h3><br/>
+            <h2>Drummers: </h2><h3 id="NumJ">1</h3><br/>
+            <h2>Band Total: </h2><h3>$</h3><h3 id="NumTFC">86</h3><br/><br/>
+            <table id="store">
+                <!--TABLE HEADER-->
+                <tr>
+                    <th>
+                        Who?
+                    </th>
+                    <th>
+                        How Much?
+                    </th>
+                    <th>
+                        How Many?
+                    </th>
+                </tr>
+                <!--BIG F ROW-->
+                <tr>
+                    <td>
+                        <img id="TFCpic" src="Images/F.jpg" alt="A picture of The Big F">
+                    </td>
+                    <td>
+                        <del>FREE</del><br/>Priceless
+                    </td>
+                    <td>
+                        <button type="button" class="PlusButton" onclick="increaseF();">+</button><br/>
+                        <button type="button" class="MinusButton" onclick="decreaseF();">-</button>
+                    </td>
+                </tr>
+                <!--THE ANIMAL ROW-->
+                <tr>
+                    <td>
+                        <img id="TFCpic" src="Images/K.jpg" alt="A picture of The Animal">
+                    </td>
+                    <td>
+                        $50
+                    </td>
+                    <td>
+                        <button type="button" class="PlusButton" onclick="increaseK();">+</button><br/>
+                        <button type="button" class="MinusButton" onclick="decreaseK();">-</button>
+                    </td>
+                </tr>
+                <!--JAY ROW-->
+                <tr>
+                    <td>
+                        <img id="TFCpic" src="Images/J.jpg" alt="A picture of Jay">
+                    </td>
+                    <td>
+                        $36
+                    </td>
+                    <td>
+                        <button type="button" class="PlusButton" onclick="increaseJ();">+</button><br/>
+                        <button type="button" class="MinusButton" onclick="decreaseJ();">-</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+</body>
+<foot>
+    <p>
+        <a href="BandSiteHome.html">Home</a><span> | </span>
+        <a href="BandSiteCalculator.html">Calculator</a><span> | </span>
+        <a href="BandSiteQuiz.html">Music Quiz</a><span> | </span>
+        <a href="BandSiteStore.html">Merch Store</a>
+   </p>
+</foot>
+</html>

@@ -1,0 +1,148 @@
+/*Set the background image for the site*/
+body{
+    background-image: url("Images/DartPattern.png");
+    background-size: 100%;
+}
+
+/*Create the admin login button*/
+p#admin{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    opacity: 0;
+    width: auto;
+    font-size: 3em;
+    transition: opacity 2s;
+    display: inline-block;
+    background-color: whitesmoke;
+}
+p#admin:hover{
+    opacity: 100;
+}
+
+/*Style the links and force them to the bottom right of the screen*/
+foot p {
+    border: 1px solid blueviolet;
+    display: inline-block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+/*Give each element a light gray background so it is readable overtop the patterned background*/
+h1, foot p, div.container{
+    background-color: whitesmoke;
+}
+
+/*HEADERS*/
+h1{
+    text-align: center;
+    width: 99px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 5px;
+    border-style: dashed;
+}
+h2{
+    margin-left: 40%;
+}
+h2, h3{
+    display:inline;   
+}
+h5{
+    margin-left: 25px;
+}
+
+/*Restrict width of content section as to not get too wide and also center it*/
+div.container{
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    height: auto;
+    overflow: auto;
+}
+
+
+/*Center wakesurfing picture and round corners*/
+img#CowboyChris{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-radius: 25%;
+}
+
+/*Shrink atom pic and position within container*/
+img#atom{
+    border-radius: 33%;
+    width: 100px;
+    margin-left: 25%;
+    margin-right: 50%;
+}
+
+/*Arrange main content containers*/
+div.top{
+    height: auto;
+}
+div.bot{
+    margin-top: 150px;
+    height: inherit;
+}
+div.left{
+    margin-left:25px;
+    width: 45%;
+    float: left;
+}
+div.right{
+    margin-right: 25px;
+    width: 45%;
+    float: right;
+}
+
+/*EVERY P ELEMENT ISIDE A DIV SHOULD BE INLINE*/
+div p{
+    display:inline;
+}
+
+/*TABLE STYLING*/
+table{
+    border: 1px solid black;
+    width: 100%;
+}
+th, td{
+    font-size: 7em;
+}
+td{  
+    border: outset;
+    text-align: center;
+}
+div#calc td:hover{
+    background-color: lightgray;
+}
+#calc{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#display{
+    text-align: right;
+}
+
+/*MERCH TABLE*/
+#TFCpic{
+    display: inline;
+    margin: 5px;
+    border: 1px solid black;
+    width: 200px;
+}
+table#store th, table#store td{
+    font-size: 2em;
+    border: 1px solid black;
+}
+button{
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    font-size: 1em;
+}
+
